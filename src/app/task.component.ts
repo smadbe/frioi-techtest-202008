@@ -32,7 +32,7 @@ export class TaskComponent {
     // Read about ReactiveX (http://reactivex.io/intro.html), Observable (http://reactivex.io/documentation/observable.html) as an introduction to Reactive Programming. 
 
     // "this.activatedRoute.paramMap" returns an observable which emits the url parameters each time they change.
-    // Click on a random button among /1..5 and see the url change. Open the console (bottom of the page) to see the message.
+    // Click on a random button among /1..5 and see the url change and the console (bottom right) logs.
     this.activatedRoute.paramMap.subscribe((params) => {
       // this code block is executed each time there is a change
       const idAsString: string = params.get('id');
