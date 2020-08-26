@@ -19,8 +19,9 @@ export class AppComponent {
    }
 
 
-  idInUrl() {
-    this.router.navigate(['/', Math.floor((Math.random() * 6) + 1)]);
+  idInUrl(id?: string) {
+    if (!id) id = Math.floor((Math.random() * 6) + 1).toString();
+    this.router.navigate(['/', id]);
   }
 
 }

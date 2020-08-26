@@ -84,10 +84,10 @@
     border-radius: 4px;
     border: 1px solid #eee;
     background-color: #fafafa;
-    height: 40px;
+    /*height: 40px;*/
     width: 200px;
     margin: 0 8px 16px;
-    padding: 16px;
+    padding: 16px 4px 16px 4px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -102,7 +102,12 @@
 
   .card.card-small {
     height: 16px;
-    width: 168px;
+    width: 110px;
+  }
+
+  .card.card-tiny {
+    height: 16px;
+    width: 16px;
   }
 
   .card-container .card:not(.highlight-card) {
@@ -260,11 +265,6 @@
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
-
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
 
     .card:not(.highlight-card) {
       height: 16px;

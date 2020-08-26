@@ -1,9 +1,14 @@
 <div class="content" role="main">
 
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
+  <div class="card highlight-card" style="padding: 30px;">
 
-    <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
+    <p>
+      Ceci est une application simple Angular composée d'une seule page. <br>
+      Complétez le code de `task.component.ts` (à partir de la ligne 28) afin qu'il charge le contenu indiqué par l'url et l'affiche ci-dessous. Vous trouverez des exemples et instructions dans le code.
+    </p>
+
+    <!--<svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
       <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
         <circle id="Ellipse_8" data-name="Ellipse 8" cx="50.839" cy="50.839" r="50.839" transform="translate(141 696)" fill="#dd0031"/>
         <g id="Group_47" data-name="Group 47" transform="translate(165.185 720.185)">
@@ -12,23 +17,43 @@
         </g>
       </g>
     </svg>
-
     <span>The app is running!</span>
 
     <svg id="rocket-smoke" alt="Rocket Ship Smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
-    </svg>
+    </svg>-->
+
 
   </div>
 
   <div class="card-container">
 
-    <div class="card card-small" (click)="idInUrl()" tabindex="0">
-      <span>Pick a random page</span>
+    <div class="card card-tiny" (click)="idInUrl('1')" tabindex="0">
+      <span>/1</span>
     </div>
+    <div class="card card-tiny" (click)="idInUrl('2')" tabindex="0">
+      <span>/2</span>
+    </div>
+    <div class="card card-tiny" (click)="idInUrl('3')" tabindex="0">
+      <span>/3</span>
+    </div>
+    <div class="card card-tiny" (click)="idInUrl('4')" tabindex="0">
+      <span>/4</span>
+    </div>
+    <div class="card card-tiny" (click)="idInUrl('5')" tabindex="0">
+      <span>/5</span>
+    </div>
+  </div>
 
+  <div class="card-container">
+    <div class="card card-small" (click)="idInUrl('6')" tabindex="0">
+      <span>/6 (not existing)</span>
+    </div>
+    <div class="card card-small" (click)="idInUrl('invalid')" tabindex="0">
+      <span>/invalid</span>
+    </div>
     <div class="card card-small" (click)="noIdInUrl()" tabindex="0">
-      <span>Display intro page</span>
+      <span>/ (intro page)</span>
     </div>
 
   </div>
