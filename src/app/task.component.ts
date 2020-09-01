@@ -25,9 +25,10 @@ export class TaskComponent {
 
   ngOnInit() { 
 
-    /***************************************************************/
-    /*** No need to understand the code above.                     */
-    /*** Here is some sample code to help you achieve the mission. */
+    /****************************************************************/
+    /*** No need to understand the code above.                      */
+    /*** Here is some sample code to help you achieve the mission.  */
+    /*** You can delete the sample code once you have read it.      */
 
     // Read about ReactiveX (http://reactivex.io/intro.html), Observable (http://reactivex.io/documentation/observable.html) as an introduction to Reactive Programming. 
 
@@ -52,18 +53,16 @@ export class TaskComponent {
     });
  
     /* Your mission:
-      Write a combination of the 2 observables above so that, when the url is changed, the task corresponding to the given 'id' is fetched and displayed.
-      To combine these two operators, you are not allowed to use nested 'subscribe's,  you'll need to use the famous "FlatMap" operator (http://reactivex.io/documentation/operators/flatmap.html).
-      The Javascript implementation of Flatmap is the "switchMap" function (https://rxjs-dev.firebaseapp.com/api/operators/switchMap and https://www.learnrxjs.io/learn-rxjs/operators/transformation/switchmap)
-    
-      Going further (bonuses if you have time or want to explore more)
-      1) display a intro task (i.e., `introTask` constant defined above) when no id is given in url (the 'of' operator may be useful:  https://www.learnrxjs.io/learn-rxjs/operators/creation/of)
-      2) display an error (by setting this.task to 'error') if the input id is not a number (the /invalid button)
-      3) display an error if the `getTaskForId` observable emit an error (the /6 button) (`catchError` operator may be useful)
-      4) display a loading message (by setting this.task to 'loading') while `getTaskForId` is fetching the data. 
+      1) Write a combination of the 2 observables above so that, when the url is changed, the task corresponding to the given 'id' is fetched and displayed.
+        To combine these two operators, you are not allowed to use nested 'subscribe's,  you'll need to use the famous "FlatMap" operator (http://reactivex.io/documentation/operators/flatmap.html).
+        The Javascript implementation of Flatmap is the "switchMap" function (https://rxjs-dev.firebaseapp.com/api/operators/switchMap and https://www.learnrxjs.io/learn-rxjs/operators/transformation/switchmap)
+      2) display an intro task (i.e., `introTask` constant defined above) when no id is given in url (the 'of' operator may be useful:  https://www.learnrxjs.io/learn-rxjs/operators/creation/of)
+      3) display an error (by setting this.task to 'error') if the input id is not a number (the /invalid button)
+      4) display an error if the `getTaskForId` observable emit an error (the /6 button) (`catchError` operator may be useful)
+      Bonus if you have time or want to explore more:
+      5) display a loading message (by setting this.task to 'loading') while `getTaskForId` is fetching the data. 
     */
 
-    // **
     /*** CHANGE THE CODE BETWEEN THE TWO LINES      ***/
     /*** ------------------------------------------ ***/
 
